@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body class="min-h-screen">
+    <header>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="relative bg-white">
+            <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+                <div
+                    class="flex justify-between items-center border-b border-gray-100 py-4 md:justify-start md:space-x-10">
+                    <div class="flex justify-start items-center">
+                        <a href="#">
+                            <span class="sr-only">Workflow</span>
+                            <img srcset="./images/logo.png 2x" alt="">
+                        </a>
+
+                    </div>
+                    <form action="" class="form-search  lg:w-0 lg:flex-1">
+                        <div class="ml-12 flex rounded-md shadow-sm">
+                            <button
+                                class="inline-flex items-center px-4 rounded-l-md bg-gray-100 text-gray-500 text-sm">
+                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    class="text-gray-400 group-focus-within:text-gray-500 transition-colors duration-150">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                            </button>
+                            <input type="text" name="company-website" id="company-website"
+                                class="outline-none bg-gray-100 flex-1 block w-1/2 py-3 pr-4 rounded-none rounded-r-md sm:text-sm"
+                                placeholder="Search HotAsset...">
+                        </div>
+                    </form>
+                    <div class="-mr-2 -my-2 md:hidden">
+                        <button type="button"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            aria-expanded="false">
+                            <span class="sr-only">Open menu</span>
+                            <!-- Heroicon name: outline/menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                    <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                        <a href="#" class="whitespace-nowrap text-base font-medium text-gray-900 hover:underline">
+                            About
+                        </a>
+                        <a href="#" class="ml-8 whitespace-nowrap text-base font-medium text-gray-900 hover:underline">
+                            Sign in
+                        </a>
+                        <a href="#"
+                            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-500 hover:bg-red-700">
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-scroll max-w-full overflow-hidden">
+                    <ul class="navbar flex flex-row overflow-x-auto whitespace-nowrap justify-between py-4 -ml-4">
+                        <li><a href="#" class="navbar__link text-gray-500 text-base font-medium px-4">Graphics &amp;
+                                Design</a>
+                        </li>
+                        <li><a href="#" class="navbar__link text-gray-500 text-base font-medium px-4">Digital
+                                Marketing</a>
+                        </li>
+                        <li><a href="#" class="navbar__link text-gray-500 text-base font-medium px-4">Writing &amp;
+                                Translation</a></li>
+                        <li><a href="#" class="navbar__link text-gray-500 text-base font-medium px-4">Video &amp;
+                                Animation</a>
+                        </li>
+                        <li><a href="#" class="navbar__link text-gray-500 text-base font-medium px-4">Music &amp;
+                                Audio</a>
+                        </li>
+                        <li><a href="#" class="navbar__link text-gray-500 text-base font-medium px-4">Programming &amp;
+                                Tech</a>
+                        </li>
+                        <li><a href="#" class="navbar__link text-gray-500 text-base font-medium px-4">Data</a></li>
+                        <li><a href="#" class="navbar__link text-gray-500 text-base font-medium px-4">Business</a></li>
+                        <li><a href="#" class="navbar__link text-gray-500 text-base font-medium px-4">Lifestyle</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main class="border-t relative">
+        <div class="max-w-screen-xl mx-auto px-5">
+            <div class="content py-10 flex justify-between">
+                <aside class="hidden lg:block pt-12">
+                    <h2 class="text-4xl font-bold">
+                        <span class="text-gray-600 lg:block mb-2">Welcome to</span>
+                        <span class="text-gray-900">HotAsset</span>
+                    </h2>
+                </aside>
+
+                <div class="w-full sm:max-w-lg mx-auto lg:mr-40 self-center">
+                    <div class="mb-8">
+                        <h2 class="mt-4 text-4xl font-extrabold leading-9  text-gray-900">
+                            Sign in to HotAsset
+                        </h2>
+                        <p class="mt-4 text-sm leading-5 text-gray-600">
+                            Not a member? <a href="#"
+                                class="font-medium text-red-500 transition duration-150 ease-in-out hover:underline">
+                                Register Now
+                            </a>
+
+                        </p>
+                        <button type="submit"
+                            class="block w-full px-3 py-3 mt-6 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none active:bg-blue-700">
+                            Sign in with Google
+                        </button>
+                    </div>
+                    <div class="or relative block text-center"><span
+                            class="bg-white inline-block p-3 relative text-gray-400">or</span></div>
+                    <form action="#" class="mt-8">
+
+                        <div class="mb-8">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" required
+                                class="block text-sm  w-full mt-1 shadow-sm form-input  bg-gray-100 rounded w-full py-3 px-4"
+                                placeholder="youremail@gmail.com">
+                        </div>
+                        <div class="mb-8">
+                            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                            <input type="password" id="password" required
+                                class="block text-sm  w-full mt-1 shadow-sm form-input  bg-gray-100 rounded w-full py-3 px-4"
+                                placeholder="At least 6 characters">
+                        </div>
+
+                        <div class="mt-8">
+                            <p for="accept-term" class="text-sm text-gray-600">
+                                Forgot a password?
+                                <a href="#"
+                                    class="font-medium underline transition duration-150 ease-in-out text-red-500 hover:text-gray-500">
+                                    Reset Password</a>
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                            <span class="rounded-md shadow-sm">
+                                <button type="button"
+                                    class="px-4 py-3 text-base bg-red-500 font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out rounded-md hover:bg-red-700 focus:outline-none focus:shadow-outline-blue  active:bg-red-600">
+                                    Sign in
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <img srcset="./images/social-media-instagram-digital-marketing-concept-3d-rendering.png 2x" alt=""
+            class="absolute bottom-0 left-0 hidden w-3/12 lg:block xl:w-auto">
+    </main>
+</body>
+
+</html>
