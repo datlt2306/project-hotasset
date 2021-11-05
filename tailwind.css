@@ -67,6 +67,17 @@ svg.filter-icon {
 .dropdown-menu {
 	@apply absolute mt-3 left-0 right-0 shadow-lg border border-gray-100 bg-white z-10 hidden group-hover:block;
 }
+.btn-dropdown-options {
+	@apply text-sm block absolute z-10 left-0 mt-2  border border-gray-50 overflow-auto rounded-lg shadow-lg bg-white;
+	top: calc(100% + 0px);
+	min-width: 180px;
+}
+.btn-dropdown-option__link {
+	@apply block py-3 px-4 text-gray-500 text-sm hover:bg-gray-100;
+}
+.btn-dropdown-option__link.active {
+	@apply font-normal text-red-500;
+}
 /* ========= FORM ======= */
 .form-label {
 	@apply block text-sm font-medium text-gray-700 mb-3;
@@ -109,6 +120,9 @@ svg.filter-icon {
 }
 .filter-categories__link.active {
 	@apply whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-500 hover:bg-red-700;
+}
+.filter-views {
+	@apply relative;
 }
 .filter-views .btn-dropdown {
 	@apply border rounded-md flex items-center justify-between py-3 px-4 text-gray-500 cursor-pointer active:scale-95 active:ring-0 active:ring-transparent  hover:ring-2 hover:ring-red-500;
@@ -170,11 +184,35 @@ svg.filter-icon {
 .shot-statistics {
 	@apply flex items-center text-gray-500 space-x-2;
 }
+.shot-thumbnail__link {
+	@apply absolute inset-0 cursor-pointer;
+}
+.shot-thumbnail {
+	@apply rounded-lg overflow-hidden relative;
+}
+.shot-thumbnail-overlay {
+	@apply flex items-end p-5 transition duration-300 ease-in-out rounded absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none bg-gradient-to-t from-gray-800;
+}
+.shot-thumbnail-overlay-content {
+	@apply flex flex-1 items-center justify-between min-w-0 space-x-4;
+}
+.shot-title {
+	@apply truncate text-base text-white;
+}
 .user-information {
 	@apply flex items-center space-x-3;
 }
 .user-information img {
 	@apply rounded-full w-6 h-6;
+}
+.like-shot {
+	@apply flex items-center justify-center relative rounded-md bg-white text-center cursor-pointer text-sm font-medium w-9 h-9 hover:bg-gray-200 pointer-events-auto;
+}
+.like-shot.liked svg {
+	fill: #ff5864;
+}
+.like-shot svg {
+	fill: #6e6d7a;
 }
 /* =======SOCIAL ======== */
 .social {
@@ -205,6 +243,7 @@ svg.filter-icon {
 .footer-links-container {
 	@apply grid grid-cols-2 md:grid-cols-4 xl:ml-20 gap-4 xl:gap-x-8 w-full;
 }
+
 @media (min-width: 1024px) {
 	main.auth-page {
 		background: linear-gradient(90deg, rgba(201, 226, 255, 1) 30%, rgba(255, 255, 255, 1) 30%);
