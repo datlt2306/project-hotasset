@@ -190,6 +190,26 @@ svg.filter-icon {
 .shot-thumbnail {
 	@apply rounded-lg overflow-hidden relative;
 }
+.shot-thumnail-without-container {
+	@apply p-5;
+}
+.shot-thumnail-without-container.pdf .shot-thumnail-without-img {
+	@apply border-red-500;
+}
+.shot-thumnail-without-container.csv .shot-thumnail-without-img {
+	@apply border-green-500;
+}
+.shot-thumnail-without-container.ppt .shot-thumnail-without-img {
+	@apply border-yellow-500;
+}
+.shot-thumnail-without-img {
+	@apply rounded-md flex items-center justify-center flex-col space-y-4 text-base font-medium;
+	height: 219px;
+	border-width: 6px;
+}
+.shot-thumbnail-icon {
+	@apply absolute bottom-0 -right-2 w-24 opacity-20;
+}
 .shot-thumbnail-overlay {
 	@apply flex items-end p-5 transition duration-300 ease-in-out rounded absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none bg-gradient-to-t from-gray-800;
 }
