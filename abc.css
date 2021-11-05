@@ -1,0 +1,32 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+.navbar-scroll {
+	height: 55px;
+}
+.or:before {
+	content: "";
+	height: 1px;
+	border-top: 1px solid #ccc;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+main {
+}
+.content {
+	min-height: calc(100vh - 134px);
+}
+
+@media (min-width: 1024px) {
+	main {
+		background: linear-gradient(90deg, rgba(201, 226, 255, 1) 30%, rgba(255, 255, 255, 1) 30%);
+	}
+}
+@media (min-width: 1280px) {
+	main {
+		background: linear-gradient(90deg, rgba(201, 226, 255, 1) 40%, rgba(255, 255, 255, 1) 40%);
+	}
+}
