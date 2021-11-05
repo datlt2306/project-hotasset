@@ -48,6 +48,9 @@ svg.filter-icon {
 .navbar__link {
 	@apply text-gray-500 text-base font-medium p-4;
 }
+.notify-count {
+	@apply absolute -top-2 -right-2 bg-red-500 rounded-full w-4 h-4 text-center text-white text-xs;
+}
 /* ========= MEGAMENU ===== */
 .megamenu {
 	@apply py-10 px-8 xl:px-12;
