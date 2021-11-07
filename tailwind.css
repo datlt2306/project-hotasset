@@ -63,7 +63,7 @@ svg.filter-icon {
 	@apply grid md:grid-cols-2 lg:grid-cols-4 gap-10;
 }
 .dropdown-menu {
-	@apply absolute mt-3 left-0 right-0 shadow-lg border border-gray-100 bg-white z-10 hidden group-hover:block;
+	@apply absolute mt-3 left-0 right-0 shadow-lg border border-gray-100 bg-white z-10 hidden;
 }
 .btn-dropdown-options {
 	@apply text-sm block absolute z-10 left-0 mt-2  border border-gray-50 overflow-auto rounded-lg shadow-lg bg-white;
@@ -130,13 +130,13 @@ svg.filter-icon {
 	@apply relative;
 }
 .filter-views .btn-dropdown {
-	@apply border rounded-md flex items-center justify-between py-3 px-4 text-gray-500 cursor-pointer active:scale-95 active:ring-0 active:ring-transparent  hover:ring-2 hover:ring-red-500;
+	@apply border rounded-md flex items-center justify-between py-3 px-4 text-gray-500 cursor-pointer;
 }
 .filter-views .btn-dropdown-caret {
 	@apply ml-3;
 }
 .filter-settings {
-	@apply border rounded-md flex justify-between items-center py-3 px-4 text-gray-500 cursor-pointer active:scale-95 active:ring-0 active:ring-transparent hover:ring-2 hover:ring-red-500;
+	@apply border rounded-md flex justify-between items-center py-3 px-4 text-gray-500 cursor-pointer;
 }
 .filter-settings .filter-icon {
 	@apply mr-3;
