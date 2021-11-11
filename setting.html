@@ -11,7 +11,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 
 </head>
@@ -22,7 +21,7 @@
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="site-nav">
                     <div class="site-nav__logo">
-                        <a href="./index-logged.html">
+                        <a href="./index.html">
                             <span class="sr-only">Workflow</span>
                             <img srcset="./images/logo.png 2x" alt="">
                         </a>
@@ -55,21 +54,18 @@
 
                     </div>
                     <div class="site-nav-login">
-                        <a href="./profile-detail.html">
-                            <img src="./images/avatar.png" alt="" width="36" height="36"></a>
+                        <a href="./signin.html">
+                            <img src="./images/icons/user.svg" alt="" width="24" height="24"></a>
                     </div>
                     <div class="site-nav-actions">
                         <a href="#" class="site-nav-actions__link">
                             About
                         </a>
-                        <a class="site-nav-actions__link relative">
-                            <img src="./images/icons/bell.svg" alt="">
-                            <span class="notify-count">7</span>
+                        <a href="./signin.html" class="site-nav-actions__link">
+                            Sign in
                         </a>
-                        <a href="./profile-detail.html">
-                            <img src="./images/avatar.png" alt="" width="36" height="36"></a>
                         <a href="./signup.html" class="btn-primary ml-8">
-                            Upload
+                            Sign up
                         </a>
                     </div>
                 </div>
@@ -77,7 +73,7 @@
                     <ul class="site-nav-desktop-nav">
                         <li class="menu-item static group"><a href="#" class="navbar__link">Graphics &amp;
                                 Design </a>
-                            <div class="dropdown-menu megamenu">
+                            <div class="dropdown-menu megamenu group-hover:block">
                                 <div class="dropdown-menu-container">
                                     <div class="menu-col">
                                         <div class="mb-8">
@@ -223,24 +219,29 @@
             </div>
         </div>
     </header>
-    <main class="auth-page border-t relative">
+
+    <main class="border-t relative">
         <div class="max-w-screen-xl mx-auto px-5">
             <div class="content py-10 flex justify-between">
-                <aside class="hidden lg:block pt-12">
-                    <h2 class="text-4xl font-bold">
-                        <span class="text-gray-600 lg:block mb-2">Welcome to</span>
-                        <span class="text-gray-900">HotAsset</span>
-                    </h2>
+                <aside class="hidden lg:block pt-2">
+                    <ul class="side-nav py-3 shadow-xl border border-gray-50">
+                        <li><a href="#" class="side-nav__link">Public
+                                Profile</a></li>
+                        <li><a href="#" class="side-nav__link">Account Settings</a></li>
+                        <li><a href="#" class="side-nav__link">Home Feed Tuner</a></li>
+                        <li><a href="#" class="side-nav__link">Claim</a></li>
+                        <li><a href="#" class="side-nav__link">Notifications</a></li>
+                        <li><a href="#" class="side-nav__link">Privacy & Data</a></li>
+                    </ul>
                 </aside>
 
-                <div class="w-full sm:max-w-lg mx-auto lg:mr-40 self-center">
+                <div class="w-full sm:max-w-lg mx-auto self-center">
                     <div class="mb-8">
                         <h2 class="mt-4 text-4xl font-extrabold leading-9  text-gray-900">
-                            Profile Information
+                            Public Profile
                         </h2>
                         <p class="mt-4 leading-5 text-gray-500">
-                            People visiting your profile will see the following info
-                        </p>
+                            People visiting your profile will see the following info </p>
                     </div>
                     <div class="user-upload-avatar flex items-center space-x-5">
                         <div class="rounded-full"><img srcset="./images/avatar.png 2x" alt=""></div>
@@ -251,18 +252,19 @@
                             <div>
                                 <label for="first-name" class="form-label">First
                                     Name</label>
-                                <input type=" text" id="first-name" required class="form-control" placeholder="Nick"
-                                    autofocus>
+                                <input type=" text" id="first-name" required="" class="form-control" placeholder="Nick"
+                                    autofocus=""
+                                    style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
                             </div>
                             <div>
                                 <label for=" last-name" class="form-label">Last
                                     Name</label>
-                                <input type="text" id="last-name" required class="form-control" placeholder="Snow">
+                                <input type="text" id="last-name" required="" class="form-control" placeholder="Snow">
                             </div>
                         </div>
                         <div class="mb-8">
                             <label for="username" class="form-label">Username</label>
-                            <input type="text" id="username" required class="form-control" placeholder="username">
+                            <input type="text" id="username" required="" class="form-control" placeholder="username">
                             <div class="flex justify-between items-center pt-4">
                                 <p class="text-gray-500 text-sm">hotasset.com/<strong
                                         class="text-red-500">username</strong></p>
@@ -295,9 +297,190 @@
                 </div>
             </div>
         </div>
-        <img srcset="./images/social-media-instagram-digital-marketing-concept-3d-rendering.png 2x" alt=""
-            class="absolute bottom-0 left-0 hidden w-3/12 lg:block xl:w-auto">
     </main>
+    <footer class="footer">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="footer-main-content">
+                <div class="footer-info">
+                    <a href="#">
+                        <img srcset="./images/logo.png 2x" alt="" class="footer-info__logo" />
+                    </a>
+                    <p class="footer__desc">HotAsset is the world’s leading community for creatives to share, grow, and
+                        get hired.</p>
+                    <div class="social">
+                        <a href="" class="social__link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="social__link">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-container">
+                    <div class="footer-links-col">
+                        <h5 class="text-base font-medium mb-5">For designers</h5>
+                        <ul class="list-none footer-links leading-6">
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Go
+                                    Pro!</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Explore
+                                    design works</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Design
+                                    blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Overtime
+                                    podcast</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Dribbble
+                                    meetups</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Playoffs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Weekly
+                                    warm-ups</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Code
+                                    of conduct</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <div class="mb-5">
+                            <h5 class="text-base font-medium mb-5">Hire designers</h5>
+                            <ul class="list-none footer-links leading-6">
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Post
+                                        a job opening</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Post
+                                        a freelance project</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Search
+                                        for designers</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-base font-medium mb-5">Brands</h5>
+                            <ul>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Advertise
+                                        with us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer-links-col">
+                        <h5 class="text-base font-medium mb-5">Company</h5>
+                        <ul class="list-none footer-links leading-6">
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Careers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Media
+                                    Kit</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Dribbble
+                                    shop</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Testimonials</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">API</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Terms
+                                    of service</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Privacy
+                                    policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <div class="mb-5">
+                            <h5 class="text-base font-medium mb-5">Directories</h5>
+                            <ul class="list-none footer-links leading-6">
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Design
+                                        jobs</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Designers
+                                        to hire</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Tags</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Places</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5 class="text-base font-medium mb-5">Design assets</h5>
+                            <ul>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Shop
+                                        Creative Market</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower-content">
+                <p>HotAsset 2021 © All rights are reserved</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -11,7 +11,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 
 </head>
@@ -22,7 +21,7 @@
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="site-nav">
                     <div class="site-nav__logo">
-                        <a href="./index-logged.html">
+                        <a href="./index.html">
                             <span class="sr-only">Workflow</span>
                             <img srcset="./images/logo.png 2x" alt="">
                         </a>
@@ -55,21 +54,18 @@
 
                     </div>
                     <div class="site-nav-login">
-                        <a href="./profile-detail.html">
-                            <img src="./images/avatar.png" alt="" width="36" height="36"></a>
+                        <a href="./signin.html">
+                            <img src="./images/icons/user.svg" alt="" width="24" height="24"></a>
                     </div>
                     <div class="site-nav-actions">
                         <a href="#" class="site-nav-actions__link">
                             About
                         </a>
-                        <a class="site-nav-actions__link relative">
-                            <img src="./images/icons/bell.svg" alt="">
-                            <span class="notify-count">7</span>
+                        <a href="./signin.html" class="site-nav-actions__link">
+                            Sign in
                         </a>
-                        <a href="./profile-detail.html">
-                            <img src="./images/avatar.png" alt="" width="36" height="36"></a>
                         <a href="./signup.html" class="btn-primary ml-8">
-                            Upload
+                            Sign up
                         </a>
                     </div>
                 </div>
@@ -77,7 +73,7 @@
                     <ul class="site-nav-desktop-nav">
                         <li class="menu-item static group"><a href="#" class="navbar__link">Graphics &amp;
                                 Design </a>
-                            <div class="dropdown-menu megamenu">
+                            <div class="dropdown-menu megamenu group-hover:block">
                                 <div class="dropdown-menu-container">
                                     <div class="menu-col">
                                         <div class="mb-8">
@@ -223,81 +219,271 @@
             </div>
         </div>
     </header>
-    <main class="auth-page border-t relative">
-        <div class="max-w-screen-xl mx-auto px-5">
-            <div class="content py-10 flex justify-between">
-                <aside class="hidden lg:block pt-12">
-                    <h2 class="text-4xl font-bold">
-                        <span class="text-gray-600 lg:block mb-2">Welcome to</span>
-                        <span class="text-gray-900">HotAsset</span>
-                    </h2>
-                </aside>
 
-                <div class="w-full sm:max-w-lg mx-auto lg:mr-40 self-center">
-                    <div class="mb-8">
-                        <h2 class="mt-4 text-4xl font-extrabold leading-9  text-gray-900">
-                            Profile Information
-                        </h2>
-                        <p class="mt-4 leading-5 text-gray-500">
-                            People visiting your profile will see the following info
-                        </p>
-                    </div>
-                    <div class="user-upload-avatar flex items-center space-x-5">
-                        <div class="rounded-full"><img srcset="./images/avatar.png 2x" alt=""></div>
-                        <button class="btn-primary">Upload Different Image</button>
-                    </div>
-                    <form action="#" class="mt-8">
-                        <div class="grid grid-cols-2 gap-4 mb-8">
-                            <div>
-                                <label for="first-name" class="form-label">First
-                                    Name</label>
-                                <input type=" text" id="first-name" required class="form-control" placeholder="Nick"
-                                    autofocus>
+    <main class="border-t relative">
+        <div class="container mx-auto px-5 relative">
+            <div class="back xl:absolute mt-8 left-6">
+                <a href="" class="text-gray-500 inline-flex items-center"><img src="./images/icons/arrow-left.svg"
+                        class="inline-block mr-2 " alt="">
+                    back</a>
+            </div>
+            <div class="content py-10">
+                <form action="#" class="mx-auto">
+                    <div class="max-w-3xl mx-auto">
+                        <div class="mb-8">
+                            <h2 class="text-2xl md:text-4xl font-extrabold leading-9  text-gray-900 text-center">
+                                Upload New Post
+                            </h2>
+                            <p class="mt-4 leading-5 text-gray-500 text-center">
+                                Drag and drop up to 6 images to create a post</p>
+                        </div>
+
+                        <input type="text" placeholder="Type a post name here..."
+                            class="text-xl md:text-2xl text-center block w-full outline-none mb-4">
+
+                        <div class="upload-workspace">
+                            <div class="mb-4">
+                                <img src="./images/icons/upload-img.svg" alt="" class="mx-auto">
                             </div>
-                            <div>
-                                <label for=" last-name" class="form-label">Last
-                                    Name</label>
-                                <input type="text" id="last-name" required class="form-control" placeholder="Snow">
+                            <p class="font-medium text-gray-500 mb-3">Drag & Drop an Image or <a href="#"
+                                    class="text-red-500 underline">Browse</a></p>
+                            <p class="text-gray-500">1600x1200 is recommended or higher. Max 10MB for each image</p>
+                        </div>
+                        <div class="upload-gallery">
+                            <div class="upload-gallery-item">
+
+                            </div>
+                            <div class="upload-gallery-item">
+
+                            </div>
+                            <div class="upload-gallery-item">
+
+                            </div>
+                            <div class="upload-gallery-item">
+
+                            </div>
+                            <div class="upload-gallery-item">
+
+                            </div>
+                            <div class="upload-gallery-item">
+
                             </div>
                         </div>
+                    </div>
+
+                    <div class="w-full sm:max-w-lg mx-auto self-center">
+
                         <div class="mb-8">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" id="username" required class="form-control" placeholder="username">
-                            <div class="flex justify-between items-center pt-4">
-                                <p class="text-gray-500 text-sm">hotasset.com/<strong
-                                        class="text-red-500">username</strong></p>
-                                <span class="text-green-500 text-sm">The username is free!</span>
-                            </div>
-                        </div>
-                        <div class="mb-8">
-                            <label for="bio" class="form-label">Bio</label>
+                            <label for="bio" class="form-label">Post Description</label>
                             <textarea name="" id="bio" cols="30" rows="10" class="form-control"
                                 placeholder="Tell about yourself"></textarea>
                         </div>
                         <div class="mb-8">
-                            <label for="pronounce" class="form-label">Pronounce</label>
+                            <label for="pronounce" class="form-label">Category</label>
                             <select name="" id="pronounce" class="form-control">
-                                <option value="">Add your pronounces (separate by comma)</option>
+                                <option value="">Select category</option>
                             </select>
                         </div>
                         <div class="mb-8">
-                            <label for="website" class="form-label">Website</label>
-                            <input type="text" id="website" class="form-control" placeholder="http://website.com/">
+                            <label for="tags" class="form-label">Tags</label>
+                            <input type="text" class="form-control" id="tags">
                         </div>
+
                         <div class="mb-8">
                             <span class="rounded-md shadow-sm">
                                 <button type="button" class="btn-primary w-full md:w-auto">
-                                    Update Profile
+                                    Upload a Post
                                 </button>
                             </span>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <img srcset="./images/social-media-instagram-digital-marketing-concept-3d-rendering.png 2x" alt=""
-            class="absolute bottom-0 left-0 hidden w-3/12 lg:block xl:w-auto">
     </main>
+    <footer class="footer">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="footer-main-content">
+                <div class="footer-info">
+                    <a href="#">
+                        <img srcset="./images/logo.png 2x" alt="" class="footer-info__logo" />
+                    </a>
+                    <p class="footer__desc">HotAsset is the world’s leading community for creatives to share, grow, and
+                        get hired.</p>
+                    <div class="social">
+                        <a href="" class="social__link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="social__link">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-container">
+                    <div class="footer-links-col">
+                        <h5 class="text-base font-medium mb-5">For designers</h5>
+                        <ul class="list-none footer-links leading-6">
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Go
+                                    Pro!</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Explore
+                                    design works</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Design
+                                    blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Overtime
+                                    podcast</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Dribbble
+                                    meetups</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Playoffs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Weekly
+                                    warm-ups</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Code
+                                    of conduct</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <div class="mb-5">
+                            <h5 class="text-base font-medium mb-5">Hire designers</h5>
+                            <ul class="list-none footer-links leading-6">
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Post
+                                        a job opening</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Post
+                                        a freelance project</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Search
+                                        for designers</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-base font-medium mb-5">Brands</h5>
+                            <ul>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Advertise
+                                        with us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer-links-col">
+                        <h5 class="text-base font-medium mb-5">Company</h5>
+                        <ul class="list-none footer-links leading-6">
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Careers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Media
+                                    Kit</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Dribbble
+                                    shop</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Testimonials</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">API</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Terms
+                                    of service</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#"
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Privacy
+                                    policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <div class="mb-5">
+                            <h5 class="text-base font-medium mb-5">Directories</h5>
+                            <ul class="list-none footer-links leading-6">
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Design
+                                        jobs</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Designers
+                                        to hire</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Tags</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Places</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5 class="text-base font-medium mb-5">Design assets</h5>
+                            <ul>
+                                <li class="footer__item">
+                                    <a href="#"
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Shop
+                                        Creative Market</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower-content">
+                <p>HotAsset 2021 © All rights are reserved</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
