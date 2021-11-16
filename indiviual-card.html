@@ -77,7 +77,7 @@
                     <ul class="site-nav-desktop-nav">
                         <li class="menu-item static group"><a href="#" class="navbar__link">Graphics &amp;
                                 Design </a>
-                            <div class="dropdown-menu megamenu">
+                            <div class="dropdown-menu megamenu group-hover:block">
                                 <div class="dropdown-menu-container">
                                     <div class="menu-col">
                                         <div class="mb-8">
@@ -102,7 +102,8 @@
                                             <h4 class="megamenu__title">Art & Illustration</h4>
                                             <ul>
                                                 <li><a href="#" class="megamenu__link">Illustration</a></li>
-                                                <li><a href="#" class="megamenu__link">Pattern Design</a>
+                                                <li><a href="#" class="megamenu__link">Pattern Design</a> <small
+                                                        class="badge">New</small>
                                                 </li>
                                                 <li><a href="#" class="megamenu__link">Portraits & Caricatures</a>
                                                 </li>
@@ -141,7 +142,9 @@
                                             <ul>
                                                 <li><a href="#" class="megamenu__link">Web & Mobile Design</a></li>
                                                 <li><a href="#" class="megamenu__link">Social Media Design</a></li>
-                                                <li><a href="#" class="megamenu__link">AR Filters & Lenses</a></li>
+                                                <li><a href="#" class="megamenu__link">AR Filters & Lenses</a>
+                                                    <small class="badge">New</small>
+                                                </li>
                                                 <li><a href="#" class="megamenu__link">Web Banners</a></li>
                                             </ul>
                                         </div>
@@ -159,10 +162,12 @@
                                         <div class="mb-8">
                                             <h4 class="megamenu__title">Fashion & Merchandise</h4>
                                             <ul>
-                                                <li><a href="#" class="megamenu__link">Fashion Design</a></li>
+                                                <li><a href="#" class="megamenu__link">Fashion Design</a> <small
+                                                        class="badge">New</small></li>
                                                 <li><a href="#" class="megamenu__link">T-Shirts & Merchandise</a>
                                                 </li>
-                                                <li><a href="#" class="megamenu__link">Jewelry Design</a></li>
+                                                <li><a href="#" class="megamenu__link">Jewelry Design</a> <small
+                                                        class="badge">New</small></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -172,7 +177,8 @@
                                             <ul>
                                                 <li><a href="#" class="megamenu__link">Flyer Design</a></li>
                                                 <li><a href="#" class="megamenu__link">Brochure Design</a></li>
-                                                <li><a href="#" class="megamenu__link">Signage Design</a></li>
+                                                <li><a href="#" class="megamenu__link">Signage Design</a><small
+                                                        class="badge">New</small></li>
                                                 <li><a href="#" class="megamenu__link">Poster Design</a></li>
                                                 <li><a href="#" class="megamenu__link">Catalog Design</a></li>
                                                 <li><a href="#" class="megamenu__link">Menu Design</a></li>
@@ -225,16 +231,18 @@
     </header>
     <main class="border-t relative">
         <div class="container mx-auto px-4 sm:px-6 relative">
-            <a href="" class="text-gray-500 inline-flex items-center"><img src="./images/icons/arrow-left.svg"
-                    class="inline-block mr-2 " alt="">
-                back</a>
+            <div class="back xl:absolute mt-8 left-6">
+                <a href="" class="text-gray-500 inline-flex items-center"><img src="./images/icons/arrow-left.svg"
+                        class="inline-block mr-2 " alt="">
+                    back</a>
+            </div>
             <div class="indivisual-card">
                 <div class="flex justify-between items-center py-7">
                     <div class="flex space-x-3">
                         <img srcset="./images/avatar.png 2x" alt="" class="rounded-full" width="44" height="44" />
                         <div>
                             <span class="block">masump</span>
-                            <a href="#" class="text-red-500">Follow</a>
+                            <a href="#" class="text-brand">Follow</a>
                         </div>
                     </div>
                     <div>
@@ -342,7 +350,7 @@
                         Sem id tortor, urna nulla enim id elit praesent. Netus volutpat adipiscing quam adipiscing
                         tincidunt eget fermentum non.</p>
                     <p class="indivisual__desc mt-10">Something something <a href="#"
-                            class="text-red-500">www.weburl.com</a>
+                            class="text-brand">www.weburl.com</a>
                     </p>
 
                 </div>
@@ -351,7 +359,7 @@
             <section class="mb-8">
                 <div class="flex justify-between mb-4">
                     <h4 class="font-bold text-xl">More from masump</h4>
-                    <a href="#" class="text-red-500">View Profile</a>
+                    <a href="#" class="text-brand">View Profile</a>
                 </div>
                 <div class="shots-grid">
                     <div class="shots-grid-row grid md:grid-cols-2 xl:grid-cols-4 gap-8">
@@ -826,41 +834,41 @@
                         <ul class="list-none footer-links leading-6">
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Go
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Go
                                     Pro!</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Explore
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Explore
                                     design works</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Design
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Design
                                     blog</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Overtime
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Overtime
                                     podcast</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Dribbble
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Dribbble
                                     meetups</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Playoffs</a>
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Playoffs</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Weekly
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Weekly
                                     warm-ups</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Code
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Code
                                     of conduct</a>
                             </li>
                         </ul>
@@ -871,17 +879,17 @@
                             <ul class="list-none footer-links leading-6">
                                 <li class="footer__item">
                                     <a href="#"
-                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Post
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Post
                                         a job opening</a>
                                 </li>
                                 <li class="footer__item">
                                     <a href="#"
-                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Post
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Post
                                         a freelance project</a>
                                 </li>
                                 <li class="footer__item">
                                     <a href="#"
-                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Search
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Search
                                         for designers</a>
                                 </li>
                             </ul>
@@ -891,7 +899,7 @@
                             <ul>
                                 <li class="footer__item">
                                     <a href="#"
-                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Advertise
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Advertise
                                         with us</a>
                                 </li>
                             </ul>
@@ -903,38 +911,38 @@
                         <ul class="list-none footer-links leading-6">
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">About</a>
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">About</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Careers</a>
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Careers</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Media
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Media
                                     Kit</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Dribbble
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Dribbble
                                     shop</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Testimonials</a>
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Testimonials</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">API</a>
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">API</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Terms
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Terms
                                     of service</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#"
-                                    class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Privacy
+                                    class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Privacy
                                     policy</a>
                             </li>
                         </ul>
@@ -945,21 +953,21 @@
                             <ul class="list-none footer-links leading-6">
                                 <li class="footer__item">
                                     <a href="#"
-                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Design
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Design
                                         jobs</a>
                                 </li>
                                 <li class="footer__item">
                                     <a href="#"
-                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Designers
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Designers
                                         to hire</a>
                                 </li>
                                 <li class="footer__item">
                                     <a href="#"
-                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Tags</a>
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Tags</a>
                                 </li>
                                 <li class="footer__item">
                                     <a href="#"
-                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Places</a>
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Places</a>
                                 </li>
                             </ul>
                         </div>
@@ -969,7 +977,7 @@
                             <ul>
                                 <li class="footer__item">
                                     <a href="#"
-                                        class="text-gray-500 border-b border-solid border-transparent hover:border-red-500 hover:text-red-500">Shop
+                                        class="text-gray-500 border-b border-solid border-transparent hover:border-brand hover:text-brand">Shop
                                         Creative Market</a>
                                 </li>
                             </ul>
