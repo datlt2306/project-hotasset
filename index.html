@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="main.css">
 
@@ -29,16 +31,14 @@
                     </div>
                     <form action="" class="form-search">
                         <div class="xl:ml-12 flex rounded-md shadow-sm">
-                            <button
-                                class="inline-flex items-center px-4 rounded-l-md bg-gray-100 text-gray-500 text-sm">
+                            <button class="form-search__btn">
                                 <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                                     class="text-gray-400 group-focus-within:text-gray-500 transition-colors duration-150">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                                 </svg>
                             </button>
-                            <input type="text" name="company-website" id="company-website"
-                                class="outline-none bg-gray-100 flex-1 block w-1/2 py-3 pr-4 rounded-none rounded-r-md sm:text-sm"
+                            <input type="text" name="company-website" id="company-website" class="form-search__input"
                                 placeholder="Search HotAsset...">
                         </div>
                     </form>
@@ -259,7 +259,7 @@
                                 </path>
                             </svg>
                         </span>
-                        <div class="btn-dropdown-options">
+                        <div class="btn-dropdown-options hidden">
                             <ul>
                                 <li>
                                     <a href="#" class="btn-dropdown-option__link active">Popular</a>
@@ -308,29 +308,29 @@
                     </div>
                 </div>
             </div>
-            <div class="shot-filters">
+            <div class="shot-filters hidden">
                 <form action="" class="shot-filters-form">
                     <fieldset class="find-shots-assets-type">
                         <label for="" class="shot-filter-form-label">Asset Type</label>
-                        <select name="" id="" class="shot-filter-form-control">
+                        <select name="" id="" class="shot-filter-form-control form-control-select">
                             <option value="">Image</option>
                         </select>
                     </fieldset>
                     <fieldset class="find-shots-channel">
                         <label for="" class="shot-filter-form-label">Channel</label>
-                        <select name="" id="" class="shot-filter-form-control">
+                        <select name="" id="" class="shot-filter-form-control form-control-select">
                             <option value="">Social</option>
                         </select>
                     </fieldset>
                     <fieldset class="find-shots-downloads">
                         <label for="" class="shot-filter-form-label">Downloads</label>
-                        <select name="" id="" class="shot-filter-form-control">
+                        <select name="" id="" class="shot-filter-form-control form-control-select">
                             <option value="">Yes</option>
                         </select>
                     </fieldset>
                     <fieldset class="find-shots-something">
                         <label for="" class="shot-filter-form-label">Something</label>
-                        <select name="" id="" class="shot-filter-form-control">
+                        <select name="" id="" class="shot-filter-form-control form-control-select">
                             <option value="">All</option>
                         </select>
                     </fieldset>
@@ -891,19 +891,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper2 = new Swiper(".mySwiper2", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            }
-        });
-    </script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

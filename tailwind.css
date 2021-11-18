@@ -69,7 +69,7 @@ svg.filter-icon {
 	@apply absolute mt-3 left-0 right-0 shadow-lg border border-gray-100 bg-white z-30 hidden;
 }
 .btn-dropdown-options {
-	@apply text-sm block absolute z-10 left-0 mt-2  border border-gray-50 overflow-auto rounded-lg shadow-lg bg-white;
+	@apply text-sm absolute z-10 left-0 mt-2  border border-gray-50 overflow-auto rounded-lg shadow-lg bg-white;
 	top: calc(100% + 0px);
 	min-width: 180px;
 }
@@ -84,11 +84,50 @@ svg.filter-icon {
 	@apply block text-sm font-medium text-gray-700 mb-3;
 }
 .form-control {
-	@apply block text-sm  mt-1 shadow-sm  bg-gray-100 rounded w-full py-3 px-4;
+	@apply block text-sm  mt-1 shadow-sm  bg-form-control rounded w-full py-3 px-4 caret-brand focus:outline-none focus:ring-1 focus:ring-brand;
+}
+.select2 {
+	@apply !w-full;
+}
+.select2-dropdown {
+	@apply border-0;
+}
+.select2-container--default .select2-selection--single {
+	@apply py-1.5 h-auto;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	top: 9px;
+	right: 6px;
+}
+.select2-container--default .select2-selection--multiple {
+	@apply border-0 bg-form-control pb-1.5;
+	height: 44px;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border: none;
+	@apply bg-form-control;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	@apply py-2 border-0 text-sm;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	top: 8px;
+	border: none;
+}
+.select2-container .select2-search--inline .select2-search__field {
+	@apply caret-brand;
+	height: 37px;
+	margin-top: 2px;
 }
 /* ========HEADER ======= */
 .form-search {
 	@apply hidden md:block lg:w-0 lg:flex-1 order-2;
+}
+.form-search__btn {
+	@apply inline-flex items-center px-4 rounded-l-md bg-form-control text-gray-500 text-sm;
+}
+.form-search__input {
+	@apply outline-none bg-form-control flex-1 block w-1/2 py-3 pr-4 rounded-none rounded-r-md sm:text-sm;
 }
 .site-nav {
 	@apply flex justify-between items-center border-b border-gray-100 py-4 md:justify-start md:space-x-10;
@@ -207,6 +246,7 @@ svg.filter-icon {
 .shot-item {
 	@apply border rounded;
 }
+
 .shots-item__desc {
 	@apply text-gray-500 mb-4;
 }
@@ -216,7 +256,20 @@ svg.filter-icon {
 .shot-statistics {
 	@apply flex items-center text-gray-500 space-x-2;
 }
-.isotope-row .shot-item {
+.grid-mansory {
+	@apply -mx-4;
+}
+.grid-mansory .shot-item {
+	@apply md:w-1/2 xl:w-1/4 px-4 border-0;
+}
+.grid-mansory .shot-item .inner {
+	@apply border rounded mb-4;
+}
+.grid-mansory .shot-item--height2 {
+	/* height: 300px; */
+}
+.grid-mansory .shot-item--height3 {
+	/* height: 400px; */
 }
 .shot-thumbnail__link {
 	@apply absolute inset-0 cursor-pointer;

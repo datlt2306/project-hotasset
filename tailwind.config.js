@@ -10,7 +10,8 @@ module.exports = {
         'brand': '#FF5864',
         'title': '#0D0C22',
         'paragraph': '#6E6D7A',
-        'grey': '#BFBFC2'
+        'grey': '#BFBFC2',
+        'form-control': '#F8F9FD'
       }
     },
   },

@@ -8,9 +8,11 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2
-        ?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="main.css">
 
@@ -53,21 +55,18 @@
 
                     </div>
                     <div class="site-nav-login">
-                        <a href="./profile-detail.html">
-                            <img src="./images/avatar.png" alt="" width="36" height="36"></a>
+                        <a href="./signin.html">
+                            <img src="./images/icons/user.svg" alt="" width="24" height="24"></a>
                     </div>
                     <div class="site-nav-actions">
                         <a href="#" class="site-nav-actions__link">
                             About
                         </a>
-                        <a class="site-nav-actions__link relative">
-                            <img src="./images/icons/bell.svg" alt="">
-                            <span class="notify-count">7</span>
+                        <a href="./signin.html" class="site-nav-actions__link">
+                            Sign in
                         </a>
-                        <a href="./profile-detail.html">
-                            <img src="./images/avatar.png" alt="" width="36" height="36"></a>
                         <a href="./signup.html" class="btn-primary ml-8">
-                            Upload
+                            Sign up
                         </a>
                     </div>
                 </div>
@@ -227,303 +226,121 @@
             </div>
         </div>
     </header>
-    <main class="border-t relative">
-        <div class="container mx-auto px-4 sm:px-6 relative">
-            <div class="back xl:absolute mt-8 left-6">
-                <a href="" class="text-gray-500 inline-flex items-center"><img src="./images/icons/arrow-left.svg"
-                        class="inline-block mr-2 " alt="">
-                    back</a>
+    <section class="banner">
+        <div class="container mx-auto">
+            <div class="banner-inner">
+                <div class="banner-content px-4 sm:px-6">
+                    <h1 class="banner__title">Every Play in the Marketing & Sales Playbook</h1>
+                    <p class="banner__desc">Dribbble is the leading destination to find &amp; showcase creative work and
+                        home to the world's
+                        best
+                        design professionals.</p>
+                    <a class="banner__btn btn-primary" href="/signup/new">Sign up</a>
+                </div>
+                <div class="banner-image">
+                    <img srcset="./images/homepage/hero-illustration.png 2x" alt="" class="mx-auto">
+                </div>
             </div>
-            <div class="indivisual-card">
-                <div class="flex justify-between items-center py-7">
-                    <div class="flex space-x-3">
-                        <img srcset="./images/avatar.png 2x" alt="" class="rounded-full" width="44" height="44" />
-                        <div>
-                            <span class="block">masump</span>
-                            <a href="#" class="text-brand">Follow</a>
-                        </div>
-                    </div>
-                    <div>
-                        <button class="btn__like">
-                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
-                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                class="icon fill-current shot-tools-icon mr-2">
+        </div>
+    </section>
+    <main class="border-t relative">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="filter-subnav">
+                <div class="filter-subnav-inner flex flex-row items-center justify-between">
+                    <div class="filter-views mr-10">
+                        <span
+                            class="btn-dropdown active:scale-95 active:ring-0 active:ring-transparent  hover:ring-2 hover:ring-brand">
+
+                            <span>Popular</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"
+                                fill="none" role="img" class="icon btn-dropdown-caret">
                                 <path
-                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                    d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
                                 </path>
                             </svg>
-                            Like</button>
-                    </div>
-                </div>
-                <div class="indivisual-card-container">
-                    <div class="indivisual-card-img relative">
-                        <div class="swiper mySwiper2 card-img-large">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                                </div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                        <div class="card-img-gallery absolute top-0 -right-32">
-                            <div thumbsSlider="" class="swiper mySwiper thumbnail-gallery">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide rounded-lg">
-                                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="rounded-md" />
-                                    </div>
-                                    <div class="swiper-slide rounded-lg">
-                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="rounded-md" />
-                                    </div>
-                                    <div class="swiper-slide rounded-lg">
-                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="rounded-md" />
-                                    </div>
-                                    <div class="swiper-slide rounded-lg">
-                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="rounded-md" />
-                                    </div>
-                                    <div class="swiper-slide rounded-lg">
-                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" class="rounded-md" />
-                                    </div>
-                                    <div class="swiper-slide rounded-lg">
-                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" class="rounded-md" />
-                                    </div>
-                                    <div class="swiper-slide rounded-lg">
-                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" class="rounded-md" />
-                                    </div>
-                                    <div class="swiper-slide rounded-lg">
-                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" class="rounded-md" />
-                                    </div>
-                                    <div class="swiper-slide rounded-lg">
-                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" class="rounded-md" />
-                                    </div>
-                                    <div class="swiper-slide rounded-lg">
-                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" class="rounded-md" />
-                                    </div>
-                                </div>
-                            </div>
+                        </span>
+                        <div class="btn-dropdown-options hidden">
+                            <ul>
+                                <li>
+                                    <a href="#" class="btn-dropdown-option__link active">Popular</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="btn-dropdown-option__link">Trending</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="btn-dropdown-option__link">Latest</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="indivisual-tag">
-                        <a href="#" class="indivisual-tag__item active">Digital Marketing</a>
-                        <a href="#" class="indivisual-tag__item">Wireframes</a>
-                        <a href="#" class="indivisual-tag__item">Prototype</a>
-                        <a href="#" class="indivisual-tag__item">Mockup</a>
-                        <a href="#" class="indivisual-tag__item">Sketches</a>
-                        <a href="#" class="indivisual-tag__item">User Flows</a>
-                        <a href="#" class="indivisual-tag__item">Components Design</a>
-                        <a href="#" class="indivisual-tag__item">Icons</a>
-                    </div>
-                    <h1 class="indivisual__name">Online Music Streaming App</h1>
-                    <p class="indivisual__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida
-                        vestibulum sed vel sed. Euismod
-                        enim felis non ultricies at lorem. Quam ac placerat commodo non ac pulvinar elementum
-                        fringilla.
-                        Sem id tortor, urna nulla enim id elit praesent. Netus volutpat adipiscing quam adipiscing
-                        tincidunt eget fermentum non.</p>
-                    <p class="indivisual__desc mt-10">Something something <a href="#"
-                            class="text-brand">www.weburl.com</a>
-                    </p>
+                    <div class="filter-categories relative text-center overflow-x-auto overflow-y-hidden">
 
+                        <ul class="overflow-x-auto overflow-y-hidden whitespace-nowrap  px-1   flex justify-between ">
+                            <li class="inline-block">
+                                <a class="filter-categories__link active">All</a>
+                            </li>
+                            <li class="inline-block">
+                                <a class="filter-categories__link">Display</a>
+                            </li>
+                            <li class="inline-block">
+                                <a class="filter-categories__link">Native</a>
+                            </li>
+                            <li class="inline-block">
+                                <a class="filter-categories__link">Social</a>
+                            </li>
+                            <li class="inline-block">
+                                <a class="filter-categories__link">Whitepaper</a>
+                            </li>
+                            <li class="inline-block">
+                                <a class="filter-categories__link">Landing Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="filter-settings  active:scale-95 active:ring-0 active:ring-transparent  hover:ring-2 hover:ring-brand">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            role="img" class="icon filter-icon icon-14">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 6C0 5.17157 0.671573 4.5 1.5 4.5H22.5C23.3284 4.5 24 5.17157 24 6C24 6.82843 23.3284 7.5 22.5 7.5H1.5C0.671573 7.5 0 6.82843 0 6ZM3 12C3 11.1716 3.67157 10.5 4.5 10.5H19.5C20.3284 10.5 21 11.1716 21 12C21 12.8284 20.3284 13.5 19.5 13.5H4.5C3.67157 13.5 3 12.8284 3 12ZM7.5 16.5C6.67157 16.5 6 17.1716 6 18C6 18.8284 6.67157 19.5 7.5 19.5H16.5C17.3284 19.5 18 18.8284 18 18C18 17.1716 17.3284 16.5 16.5 16.5H7.5Z">
+                            </path>
+                        </svg>
+                        <span class="label" title="Filters">Filters</span>
+                    </div>
                 </div>
             </div>
+            <div class="shot-filters hidden">
+                <form action="" class="shot-filters-form">
+                    <fieldset class="find-shots-assets-type">
+                        <label for="" class="shot-filter-form-label">Asset Type</label>
+                        <select name="" id="" class="shot-filter-form-control form-control-select">
+                            <option value="">Image</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="find-shots-channel">
+                        <label for="" class="shot-filter-form-label">Channel</label>
+                        <select name="" id="" class="shot-filter-form-control form-control-select">
+                            <option value="">Social</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="find-shots-downloads">
+                        <label for="" class="shot-filter-form-label">Downloads</label>
+                        <select name="" id="" class="shot-filter-form-control form-control-select">
+                            <option value="">Yes</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="find-shots-something">
+                        <label for="" class="shot-filter-form-label">Something</label>
+                        <select name="" id="" class="shot-filter-form-control form-control-select">
+                            <option value="">All</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="shots-grid">
 
-            <section class="mb-8">
-                <div class="flex justify-between mb-4">
-                    <h4 class="font-bold text-xl">More from masump</h4>
-                    <a href="#" class="text-brand">View Profile</a>
-                </div>
-                <div class="shots-grid">
-                    <div class="shots-grid-row grid md:grid-cols-2 xl:grid-cols-4 gap-8">
-                        <div class="shot-item">
-                            <div class="shot-thumbnail group">
-                                <figure>
-                                    <img src="./images/upload/1.png" alt="" />
-                                </figure>
-                                <a class="shot-thumbnail__link" href="#"></a>
-                                <div class="shot-thumbnail-overlay">
-                                    <div class="shot-thumbnail-overlay-content">
-                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
-                                        <div class="shot-action">
-                                            <a class="like-shot" itle="Like this shot">
-                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
-                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                    class="icon ">
-                                                    <path
-                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                    </path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="shot-details-container">
-                                <p class="shots-item__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <div class="user-information">
-                                        <a href="" class="user-infor__avatar">
-                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
-                                        </a>
-                                        <a href="" class="user-info__name">
-                                            masump
-                                        </a>
-                                    </div>
-                                    <div class="shot-statistics">
-                                        <a href="">
-                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
-                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                class="icon fill-current shot-tools-icon">
-                                                <path
-                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <span>223</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--End .shot-item-->
-                        <div class="shot-item">
-                            <div class="shot-thumbnail group">
-                                <figure>
-                                    <img src="./images/upload/1.png" alt="" />
-                                </figure>
-                                <a class="shot-thumbnail__link" href="#"></a>
-                                <div class="shot-thumbnail-overlay">
-                                    <div class="shot-thumbnail-overlay-content">
-                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
-                                        <div class="shot-action">
-                                            <a class="like-shot liked" itle="Like this shot">
-                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
-                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                    class="icon ">
-                                                    <path
-                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                    </path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="shot-details-container">
-                                <p class="shots-item__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <div class="user-information">
-                                        <a href="" class="user-infor__avatar">
-                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
-                                        </a>
-                                        <a href="" class="user-info__name">
-                                            masump
-                                        </a>
-                                    </div>
-                                    <div class="shot-statistics">
-                                        <a href="">
-                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
-                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                class="icon fill-current shot-tools-icon">
-                                                <path
-                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <span>223</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--End .shot-item-->
-                        <div class="shot-item">
-                            <div class="shot-thumbnail group">
-                                <figure>
-                                    <img src="./images/upload/1.png" alt="" />
-                                </figure>
-                                <a class="shot-thumbnail__link" href="#"></a>
-                                <div class="shot-thumbnail-overlay">
-                                    <div class="shot-thumbnail-overlay-content">
-                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
-                                        <div class="shot-action">
-                                            <a class="like-shot" itle="Like this shot">
-                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
-                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                    class="icon ">
-                                                    <path
-                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                    </path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="shot-details-container">
-                                <p class="shots-item__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <div class="user-information">
-                                        <a href="" class="user-infor__avatar">
-                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
-                                        </a>
-                                        <a href="" class="user-info__name">
-                                            masump
-                                        </a>
-                                    </div>
-                                    <div class="shot-statistics">
-                                        <a href="">
-                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
-                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                class="icon fill-current shot-tools-icon">
-                                                <path
-                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <span>223</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--End .shot-item-->
-                        <div class="shot-item">
+                <div class="grid-mansory">
+                    <div class="shot-item">
+                        <div class="inner">
                             <div class="shot-thumbnail group">
                                 <figure>
                                     <img src="./images/upload/1.png" alt="" />
@@ -577,180 +394,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="mb-4">
-                <div class="flex justify-between mb-4">
-                    <h4 class="font-bold text-xl">Similar Assets</h4>
-                </div>
-                <div class="shots-grid">
-                    <div class="shots-grid-row grid md:grid-cols-2 xl:grid-cols-4 gap-8">
-                        <div class="shot-item">
+                    <div class="shot-item">
+                        <div class="inner">
                             <div class="shot-thumbnail group">
                                 <figure>
-                                    <img src="./images/upload/1.png" alt="" />
-                                </figure>
-                                <a class="shot-thumbnail__link" href="#"></a>
-                                <div class="shot-thumbnail-overlay">
-                                    <div class="shot-thumbnail-overlay-content">
-                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
-                                        <div class="shot-action">
-                                            <a class="like-shot" itle="Like this shot">
-                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
-                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                    class="icon ">
-                                                    <path
-                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                    </path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="shot-details-container">
-                                <p class="shots-item__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <div class="user-information">
-                                        <a href="" class="user-infor__avatar">
-                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
-                                        </a>
-                                        <a href="" class="user-info__name">
-                                            masump
-                                        </a>
-                                    </div>
-                                    <div class="shot-statistics">
-                                        <a href="">
-                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
-                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                class="icon fill-current shot-tools-icon">
-                                                <path
-                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <span>223</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--End .shot-item-->
-                        <div class="shot-item">
-                            <div class="shot-thumbnail group">
-                                <figure>
-                                    <img src="./images/upload/1.png" alt="" />
-                                </figure>
-                                <a class="shot-thumbnail__link" href="#"></a>
-                                <div class="shot-thumbnail-overlay">
-                                    <div class="shot-thumbnail-overlay-content">
-                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
-                                        <div class="shot-action">
-                                            <a class="like-shot liked" itle="Like this shot">
-                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
-                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                    class="icon ">
-                                                    <path
-                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                    </path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="shot-details-container">
-                                <p class="shots-item__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <div class="user-information">
-                                        <a href="" class="user-infor__avatar">
-                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
-                                        </a>
-                                        <a href="" class="user-info__name">
-                                            masump
-                                        </a>
-                                    </div>
-                                    <div class="shot-statistics">
-                                        <a href="">
-                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
-                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                class="icon fill-current shot-tools-icon">
-                                                <path
-                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <span>223</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--End .shot-item-->
-                        <div class="shot-item">
-                            <div class="shot-thumbnail group">
-                                <figure>
-                                    <img src="./images/upload/1.png" alt="" />
-                                </figure>
-                                <a class="shot-thumbnail__link" href="#"></a>
-                                <div class="shot-thumbnail-overlay">
-                                    <div class="shot-thumbnail-overlay-content">
-                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
-                                        <div class="shot-action">
-                                            <a class="like-shot" itle="Like this shot">
-                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
-                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                    class="icon ">
-                                                    <path
-                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                    </path>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="shot-details-container">
-                                <p class="shots-item__desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <div class="user-information">
-                                        <a href="" class="user-infor__avatar">
-                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
-                                        </a>
-                                        <a href="" class="user-info__name">
-                                            masump
-                                        </a>
-                                    </div>
-                                    <div class="shot-statistics">
-                                        <a href="">
-                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
-                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
-                                                class="icon fill-current shot-tools-icon">
-                                                <path
-                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <span>223</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--End .shot-item-->
-                        <div class="shot-item">
-                            <div class="shot-thumbnail group">
-                                <figure>
-                                    <img src="./images/upload/1.png" alt="" />
+                                    <img src="./images/upload/3.png" alt="" />
                                 </figure>
                                 <a class="shot-thumbnail__link" href="#"></a>
                                 <div class="shot-thumbnail-overlay">
@@ -801,8 +449,572 @@
                             </div>
                         </div>
                     </div>
+                    <div class="shot-item">
+                        <div class="inner">
+                            <div class="shot-thumbnail group">
+                                <figure>
+                                    <img src="./images/upload/4.png" alt="" />
+                                </figure>
+                                <a class="shot-thumbnail__link" href="#"></a>
+                                <div class="shot-thumbnail-overlay">
+                                    <div class="shot-thumbnail-overlay-content">
+                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
+                                        <div class="shot-action">
+                                            <a class="like-shot" itle="Like this shot">
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                    class="icon ">
+                                                    <path
+                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <p class="shots-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="user-information">
+                                        <a href="" class="user-infor__avatar">
+                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
+                                        </a>
+                                        <a href="" class="user-info__name">
+                                            masump
+                                        </a>
+                                    </div>
+                                    <div class="shot-statistics">
+                                        <a href="">
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                class="icon fill-current shot-tools-icon">
+                                                <path
+                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <span>223</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="shot-item">
+                        <div class="inner">
+                            <div class="shot-thumbnail group">
+                                <figure>
+                                    <img src="./images/upload/1.png" alt="" />
+                                </figure>
+                                <a class="shot-thumbnail__link" href="#"></a>
+                                <div class="shot-thumbnail-overlay">
+                                    <div class="shot-thumbnail-overlay-content">
+                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
+                                        <div class="shot-action">
+                                            <a class="like-shot" itle="Like this shot">
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                    class="icon ">
+                                                    <path
+                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <p class="shots-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="user-information">
+                                        <a href="" class="user-infor__avatar">
+                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
+                                        </a>
+                                        <a href="" class="user-info__name">
+                                            masump
+                                        </a>
+                                    </div>
+                                    <div class="shot-statistics">
+                                        <a href="">
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                class="icon fill-current shot-tools-icon">
+                                                <path
+                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <span>223</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="shot-item">
+                        <div class="inner">
+                            <div class="shot-thumbnail group">
+                                <figure>
+                                    <img src="./images/upload/5.png" alt="" />
+                                </figure>
+                                <a class="shot-thumbnail__link" href="#"></a>
+                                <div class="shot-thumbnail-overlay">
+                                    <div class="shot-thumbnail-overlay-content">
+                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
+                                        <div class="shot-action">
+                                            <a class="like-shot" itle="Like this shot">
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                    class="icon ">
+                                                    <path
+                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <p class="shots-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="user-information">
+                                        <a href="" class="user-infor__avatar">
+                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
+                                        </a>
+                                        <a href="" class="user-info__name">
+                                            masump
+                                        </a>
+                                    </div>
+                                    <div class="shot-statistics">
+                                        <a href="">
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                class="icon fill-current shot-tools-icon">
+                                                <path
+                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <span>223</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="shot-item">
+                        <div class="inner">
+                            <div class="shot-thumbnail group">
+                                <figure>
+                                    <img src="./images/upload/1.png" alt="" />
+                                </figure>
+                                <a class="shot-thumbnail__link" href="#"></a>
+                                <div class="shot-thumbnail-overlay">
+                                    <div class="shot-thumbnail-overlay-content">
+                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
+                                        <div class="shot-action">
+                                            <a class="like-shot" itle="Like this shot">
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                    class="icon ">
+                                                    <path
+                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <p class="shots-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="user-information">
+                                        <a href="" class="user-infor__avatar">
+                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
+                                        </a>
+                                        <a href="" class="user-info__name">
+                                            masump
+                                        </a>
+                                    </div>
+                                    <div class="shot-statistics">
+                                        <a href="">
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                class="icon fill-current shot-tools-icon">
+                                                <path
+                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <span>223</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="shot-item">
+                        <div class="inner">
+                            <div class="shot-thumbnail group">
+                                <figure>
+                                    <img src="./images/upload/1.png" alt="" />
+                                </figure>
+                                <a class="shot-thumbnail__link" href="#"></a>
+                                <div class="shot-thumbnail-overlay">
+                                    <div class="shot-thumbnail-overlay-content">
+                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
+                                        <div class="shot-action">
+                                            <a class="like-shot" itle="Like this shot">
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                    class="icon ">
+                                                    <path
+                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <p class="shots-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="user-information">
+                                        <a href="" class="user-infor__avatar">
+                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
+                                        </a>
+                                        <a href="" class="user-info__name">
+                                            masump
+                                        </a>
+                                    </div>
+                                    <div class="shot-statistics">
+                                        <a href="">
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                class="icon fill-current shot-tools-icon">
+                                                <path
+                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <span>223</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="shot-item shot-item--height2">
+                        <div class="inner">
+                            <div class="shot-thumbnail group">
+                                <figure>
+                                    <img src="./images/upload/3.png" alt="" />
+                                </figure>
+                                <a class="shot-thumbnail__link" href="#"></a>
+                                <div class="shot-thumbnail-overlay">
+                                    <div class="shot-thumbnail-overlay-content">
+                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
+                                        <div class="shot-action">
+                                            <a class="like-shot" itle="Like this shot">
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                    class="icon ">
+                                                    <path
+                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <p class="shots-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="user-information">
+                                        <a href="" class="user-infor__avatar">
+                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
+                                        </a>
+                                        <a href="" class="user-info__name">
+                                            masump
+                                        </a>
+                                    </div>
+                                    <div class="shot-statistics">
+                                        <a href="">
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                class="icon fill-current shot-tools-icon">
+                                                <path
+                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <span>223</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="shot-item">
+                        <div class="inner">
+                            <div class="shot-thumbnail group">
+                                <figure>
+                                    <img src="./images/upload/5.png" alt="" />
+                                </figure>
+                                <a class="shot-thumbnail__link" href="#"></a>
+                                <div class="shot-thumbnail-overlay">
+                                    <div class="shot-thumbnail-overlay-content">
+                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
+                                        <div class="shot-action">
+                                            <a class="like-shot" itle="Like this shot">
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                    class="icon ">
+                                                    <path
+                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <p class="shots-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="user-information">
+                                        <a href="" class="user-infor__avatar">
+                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
+                                        </a>
+                                        <a href="" class="user-info__name">
+                                            masump
+                                        </a>
+                                    </div>
+                                    <div class="shot-statistics">
+                                        <a href="">
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                class="icon fill-current shot-tools-icon">
+                                                <path
+                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <span>223</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="shot-item shot-item--height2">
+                        <div class="inner">
+                            <div class="shot-thumbnail group">
+                                <figure>
+                                    <img src="./images/upload/3.png" alt="" />
+                                </figure>
+                                <a class="shot-thumbnail__link" href="#"></a>
+                                <div class="shot-thumbnail-overlay">
+                                    <div class="shot-thumbnail-overlay-content">
+                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
+                                        <div class="shot-action">
+                                            <a class="like-shot" itle="Like this shot">
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                    class="icon ">
+                                                    <path
+                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <p class="shots-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="user-information">
+                                        <a href="" class="user-infor__avatar">
+                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
+                                        </a>
+                                        <a href="" class="user-info__name">
+                                            masump
+                                        </a>
+                                    </div>
+                                    <div class="shot-statistics">
+                                        <a href="">
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                class="icon fill-current shot-tools-icon">
+                                                <path
+                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <span>223</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="shot-item">
+                        <div class="inner">
+                            <div class="shot-thumbnail group">
+                                <figure>
+                                    <img src="./images/upload/1.png" alt="" />
+                                </figure>
+                                <a class="shot-thumbnail__link" href="#"></a>
+                                <div class="shot-thumbnail-overlay">
+                                    <div class="shot-thumbnail-overlay-content">
+                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
+                                        <div class="shot-action">
+                                            <a class="like-shot" itle="Like this shot">
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                    class="icon ">
+                                                    <path
+                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <p class="shots-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="user-information">
+                                        <a href="" class="user-infor__avatar">
+                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
+                                        </a>
+                                        <a href="" class="user-info__name">
+                                            masump
+                                        </a>
+                                    </div>
+                                    <div class="shot-statistics">
+                                        <a href="">
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                class="icon fill-current shot-tools-icon">
+                                                <path
+                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <span>223</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="shot-item">
+                        <div class="inner">
+                            <div class="shot-thumbnail group">
+                                <figure>
+                                    <img src="./images/upload/1.png" alt="" />
+                                </figure>
+                                <a class="shot-thumbnail__link" href="#"></a>
+                                <div class="shot-thumbnail-overlay">
+                                    <div class="shot-thumbnail-overlay-content">
+                                        <div class="shot-title">Asset Type Name Asset Type Name Asset Type Name</div>
+                                        <div class="shot-action">
+                                            <a class="like-shot" itle="Like this shot">
+                                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                    class="icon ">
+                                                    <path
+                                                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shot-details-container">
+                                <p class="shots-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor di...
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="user-information">
+                                        <a href="" class="user-infor__avatar">
+                                            <img src="./images/upload/1.png" alt="" width="24" height="24">
+                                        </a>
+                                        <a href="" class="user-info__name">
+                                            masump
+                                        </a>
+                                    </div>
+                                    <div class="shot-statistics">
+                                        <a href="">
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                                enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img"
+                                                class="icon fill-current shot-tools-icon">
+                                                <path
+                                                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <span>223</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </section>
+            </div>
+            <div class="infinite-login-actions">
+                <a class="btn-primary" href="/signup/new">Sign up to continue</a>
+                <a href="/session/new">or sign in</a>
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -988,26 +1200,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 10,
-            slidesPerView: 8,
-            freeMode: true,
-            watchSlidesProgress: true,
-            direction: "vertical"
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            thumbs: {
-                swiper: swiper
-            }
-        });
-    </script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
