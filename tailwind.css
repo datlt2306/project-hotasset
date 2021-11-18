@@ -93,7 +93,7 @@ svg.filter-icon {
 	@apply border-0;
 }
 .select2-container--default .select2-selection--single {
-	@apply py-1.5 h-auto;
+	@apply py-1.5 h-auto border-gray-200;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow {
 	top: 9px;
