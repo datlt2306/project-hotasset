@@ -217,7 +217,7 @@ svg.filter-icon {
 	@apply border block w-full p-3 rounded text-sm lg:text-base;
 }
 .btn__like {
-	@apply border border-gray-500 rounded-md flex justify-between items-center py-2 px-4 text-gray-500 cursor-pointer active:scale-95 active:ring-0 active:ring-transparent  hover:ring-2 hover:ring-brand;
+	@apply border border-gray-500 rounded-md flex justify-between items-center py-2 px-4 text-gray-500 cursor-pointer hover:bg-brand hover:text-white hover:border-transparent;
 }
 /* =======+BANNER +======== */
 .banner {
