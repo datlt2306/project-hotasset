@@ -39,4 +39,15 @@ $(document).ready(function () {
             btnDropdownOptions.toggle('fast');
         })
     }
+
+
+
+
+
+    $('#menu-switch').on('click', function () {
+        $('body').toggleClass('toggled');
+    });
+    $('.sidebar-menu__child, .sidebar-menu__parent').on('click', function () {
+        $(this).toggleClass('open').next().slideToggle('fast');
+    })
 })

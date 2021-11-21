@@ -13,6 +13,38 @@
 body {
 	font-family: "Roboto", sans-serif;
 }
+body.toggled {
+	overflow: hidden;
+}
+body.toggled .sidebar {
+	transform: translateY(0);
+}
+.sidebar {
+	@apply fixed z-10 h-full shadow-md block md:hidden;
+}
+.sidebar {
+	@apply z-40 w-full;
+	top: 57px;
+	transform: translateY(-140%);
+}
+.sidebar-menu {
+	@apply bg-white h-full px-5;
+}
+.sidebar-menu__link {
+	@apply text-lg py-3 flex;
+}
+.sidebar-menu__parent svg {
+	@apply font-bold text-xl;
+}
+.sidebar-menu__parent.open svg {
+	@apply transform rotate-180;
+}
+.sidebar-menu__child {
+	@apply text-base flex py-2;
+}
+.sidebar-menu-sub__link {
+	@apply text-gray-500 block py-1.5;
+}
 .or:before {
 	content: "";
 	height: 1px;
@@ -352,13 +384,10 @@ svg.filter-icon {
 	@apply relative;
 }
 .indivisual-card {
-	@apply max-w-4xl mx-auto mb-24;
-}
-.indivisual-card-img {
-	margin-right: 130px;
+	@apply max-w-4xl mx-auto;
 }
 .indivisual-tag {
-	@apply flex space-x-4 py-4;
+	@apply flex space-x-4 py-4 overflow-x-auto whitespace-nowrap;
 }
 .indivisual-tag__item {
 	@apply bg-gray-200 rounded-full py-2 px-4 text-xs text-gray-600;
@@ -367,7 +396,7 @@ svg.filter-icon {
 	@apply bg-brand text-white;
 }
 .indivisual__name {
-	@apply text-4xl font-bold my-6;
+	@apply text-2xl md:text-4xl font-bold my-6;
 }
 .indivisual__desc {
 	@apply text-gray-500 text-xl;
@@ -387,7 +416,7 @@ svg.filter-icon {
 	@apply flex mb-10 justify-center border-b pb-5 md:pt-0 md:border-0 md:justify-start;
 }
 .social__link {
-	@apply w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600;
+	@apply w-8 h-8 py-1 text-gray-600;
 }
 /*====== FOOTER =====*/
 .footer {
@@ -406,7 +435,7 @@ svg.filter-icon {
 	@apply mb-3;
 }
 .footer__desc {
-	@apply my-6 text-sm text-gray-500 w-10/12 sm:w-64 mx-auto md:ml-0 md:mr-auto;
+	@apply my-6 text-sm text-center text-gray-500 md:text-left sm:w-64 mx-auto md:ml-0 md:mr-auto;
 }
 .footer-links-container {
 	@apply grid grid-cols-2 md:grid-cols-4 xl:ml-20 gap-4 xl:gap-x-8 w-full;
@@ -421,12 +450,12 @@ svg.filter-icon {
 .mySwiper .swiper-slide-thumb-active {
 	opacity: 1;
 }
-
+.card-img-gallery {
+	@apply hidden md:block md:absolute top-0 -right-32;
+}
 .card-img-large .swiper-slide img {
-	display: block;
-	width: 100%;
-	height: 640px;
-	object-fit: cover;
+	@apply block w-full object-cover;
+	max-height: 643px;
 }
 
 .thumbnail-gallery .swiper-slide img {
@@ -500,6 +529,10 @@ svg.filter-icon {
 	}
 	.profile {
 		margin-top: 5%;
+	}
+
+	.indivisual-card-img {
+		margin-right: 130px;
 	}
 }
 @media (min-width: 1280px) {
