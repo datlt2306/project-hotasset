@@ -405,7 +405,7 @@ svg.filter-icon {
 	@apply bg-gray-100 border rounded-lg flex items-center justify-center text-center flex-col h-96;
 }
 @media (min-width: 768px) {
-	.upload-workspace.hasNoImage {
+	.upload-workspace {
 		height: 570px;
 	}
 }
