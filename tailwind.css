@@ -402,14 +402,22 @@ svg.filter-icon {
 	@apply text-gray-500 text-xl;
 }
 .upload-workspace {
-	@apply bg-gray-100 border rounded-md flex items-center justify-center text-center flex-col;
-	height: 570px;
+	@apply bg-gray-100 border rounded-lg flex items-center justify-center text-center flex-col h-96;
 }
+@media (min-width: 768px) {
+	.upload-workspace.hasNoImage {
+		height: 570px;
+	}
+}
+
 .upload-gallery {
 	@apply grid grid-cols-3 xl:grid-cols-6 gap-4 mt-5 mb-14;
 }
 .upload-gallery-item {
-	@apply h-24 border-2 border-dashed rounded border-gray-300 bg-gray-100;
+	@apply h-24 border border-dashed rounded-lg border-gray-300 bg-gray-100 relative;
+}
+.upload-gallery-delete {
+	@apply absolute -top-3 -right-3;
 }
 /* =======SOCIAL ======== */
 .social {

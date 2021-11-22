@@ -1,7 +1,6 @@
 $(document).ready(function () {
-    $('.grid-mansory').masonry({
-        percentPosition: true
-    });
+
+
     if ($('.mySwiper2')) {
         var swiper2 = new Swiper(".mySwiper2", {
             navigation: {
@@ -22,6 +21,10 @@ $(document).ready(function () {
     }
     if ($('#pronounce')) {
         $('#pronounce').select2({
+        });
+    }
+    if ($('#tags')) {
+        $('#tags').select2({
         });
     }
     const filterViews = $('.filter-views');
@@ -50,4 +53,10 @@ $(document).ready(function () {
     $('.sidebar-menu__child, .sidebar-menu__parent').on('click', function () {
         $(this).toggleClass('open').next().slideToggle('fast');
     })
+
+    if ('.grid-mansory') {
+        $('.grid-mansory').masonry({
+            percentPosition: true
+        });
+    }
 })
