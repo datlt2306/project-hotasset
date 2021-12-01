@@ -54,7 +54,7 @@ $(document).ready(function () {
         $(this).toggleClass('open').next().slideToggle('fast');
     })
 
-    if ('.grid-mansory') {
+    if ($('.grid-mansory')) {
         $('.grid-mansory').masonry({
             percentPosition: true
         });
