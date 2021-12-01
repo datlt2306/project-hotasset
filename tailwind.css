@@ -333,6 +333,9 @@ svg.filter-icon {
 .shot-statistics {
 	@apply flex items-center text-gray-500 space-x-2;
 }
+.shot-statistics .shot-tools-icon.liked {
+	fill: #ff5864;
+}
 .grid-mansory {
 	@apply -mx-4;
 }
