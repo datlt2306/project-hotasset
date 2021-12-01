@@ -59,20 +59,42 @@
                         <a href="./profile-detail.html">
                             <img src="./images/avatar.png" alt="" width="36" height="36"></a>
                     </div>
-                    <div class="site-nav-actions">
-                        <a href="#" class="site-nav-actions__link">
-                            About
-                        </a>
-                        <a class="site-nav-actions__link relative">
-                            <img src="./images/icons/bell.svg" alt="">
-                            <span class="notify-count">7</span>
-                        </a>
-                        <a href="./profile-detail.html">
-                            <img src="./images/avatar.png" alt="" width="36" height="36"></a>
-                        <a href="./signup.html" class="btn-primary ml-8">
-                            Upload
-                        </a>
-                    </div>
+                    <ul class="site-nav-actions">
+                        <li> <a href="#" class="site-nav-actions__link">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a class="site-nav-actions__link relative">
+                                <img src="./images/icons/bell.svg" alt="">
+                                <span class="notify-count">7</span>
+                            </a>
+                        </li>
+                        <li id="header-user-setting" class="header-user-setting">
+                            <a>
+                                <img src="./images/avatar.png" alt="" width="36" height="36"></a>
+                            <div class="dropdown-user-setting hidden">
+                                <h2>👋 <span class="inline-block ml-2">Welcome, John Snow!</span></h2>
+                                <ul>
+                                    <li><a href=""><img src="./images/icons/user/Setting.svg" alt=""> Settings</a></li>
+                                    <li><a href=""><img src="./images/icons/user/Danger-Circle.svg" alt=""> Get Help</a>
+                                    </li>
+                                    <li><a href=""><img src="./images/icons/user/Paper.svg" alt=""> Terms &
+                                            Privacy</a></li>
+                                    <li><a href=""><img src="./images/icons/user/Logout.svg" alt=""> Log Out</a></li>
+                                </ul>
+
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="./signup.html" class="btn-primary ml-8">
+                                Upload
+                            </a>
+                        </li>
+
+                    </ul>
+
                 </div>
                 <div class="site-nav-desktop-only relative">
                     <ul class="site-nav-desktop-nav">
