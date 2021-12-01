@@ -578,6 +578,23 @@ svg.filter-icon {
 	right: 27.5px;
 	background: url("./images/icons/close.png");
 }
+.public-profile-banner {
+	height: 130px;
+	@apply relative bg-cover bg-no-repeat mb-16;
+}
+.public-profile-banner-upload {
+	@apply transform absolute -bottom-8 left-1/2 -translate-x-1/2 bg-cover bg-no-repeat flex items-center justify-center cursor-pointer rounded-full;
+	width: 72px;
+	height: 72px;
+}
+.public-profile-banner-upload:after {
+	content: "";
+	background: rgba(0, 0, 0, 0.5);
+	@apply absolute inset-0 rounded-full;
+}
+.public-profile-banner-upload img {
+	@apply relative z-50;
+}
 @media (min-width: 640px) {
 	.profile {
 		margin-top: 10%;
