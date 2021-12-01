@@ -293,6 +293,9 @@ svg.filter-icon {
 .btn__like {
 	@apply border border-gray-500 rounded-md flex justify-between items-center py-2 px-4 text-gray-500 cursor-pointer hover:bg-brand hover:text-white hover:border-transparent;
 }
+.btn__like.active {
+	@apply bg-brand text-white border-brand;
+}
 /* =======+BANNER +======== */
 .banner {
 	background: #f8f9fd;
@@ -498,16 +501,19 @@ svg.filter-icon {
 }
 
 /* ========+SWIPERJS====== */
-.thumbnail-gallery {
-	width: 100px;
-	height: 650px;
+
+@media (min-width: 768px) {
+	.thumbnail-gallery {
+		width: 100px;
+		height: 650px;
+	}
 }
 
 .mySwiper .swiper-slide-thumb-active {
 	opacity: 1;
 }
 .card-img-gallery {
-	@apply hidden md:block md:absolute top-0 -right-32;
+	@apply md:block md:absolute top-0 -right-32;
 }
 .card-img-large .swiper-slide img {
 	@apply block w-full object-cover;
