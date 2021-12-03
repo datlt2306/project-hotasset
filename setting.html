@@ -16,6 +16,40 @@
 </head>
 
 <body class="min-h-screen">
+    <nav id="sidebar" class="sidebar">
+        <ul class="sidebar-menu sidebar-menu-setting">
+            <li class="relative group">
+                <a class="sidebar-menu__link block">
+                    <img src="./images/icons/Setting.svg" alt="">
+                    Public
+                    Profile
+                </a>
+            </li>
+            <li class="relative ">
+                <a class="sidebar-menu__link block"><img src="./images/icons/Filter.svg" alt=""> Account
+                    Settings</a>
+                </a>
+            </li>
+            <li class="relative ">
+                <a class="sidebar-menu__link block"><img src="./images/icons/Discovery.svg" alt=""> Home Feed
+                    Tuner</a>
+                </a>
+            </li>
+            <li class="relative ">
+                <a class="sidebar-menu__link block"><img src="./images/icons/Shield-Done.svg" alt="">
+                    Claim</a>
+            </li>
+            <li class="relative ">
+                <a class="sidebar-menu__link block"><img src="./images/icons/Notification.svg" alt="">
+                    Notifications</a>
+            </li>
+            <li class="relative ">
+                <a class="sidebar-menu__link block">
+                    <img src="./images/icons/Password.svg" alt=""> Privacy &
+                    Data</a>
+            </li>
+        </ul>
+    </nav>
     <header>
         <div class="relative bg-white">
             <div class="container mx-auto px-4 sm:px-6">
@@ -40,14 +74,15 @@
                         </div>
                     </form>
                     <div class="-mr-2 -my-2 md:hidden">
-                        <button type="button" class="btn-bar" aria-expanded="false">
+                        <button type="button" class="btn-bar" aria-expanded="false" id="menu-switch">
                             <span class="sr-only">Open menu</span>
                             <!-- Heroicon name: outline/menu -->
-                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" aria-hidden="true">
+                            <svg class="h-6 w-6 humberger-menu" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
+                            <img src="./images/icons/arrow-left.svg" alt="" class="arrow-left hidden">
                         </button>
 
                     </div>
@@ -497,6 +532,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

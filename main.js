@@ -57,6 +57,14 @@ $(document).ready(function () {
 
     $('#menu-switch').on('click', function () {
         $('body').toggleClass('toggled');
+
+        if ($('body').hasClass('toggled')) {
+            $('.humberger-menu').hide();
+            $('.arrow-left').show();
+        } else {
+            $('.humberger-menu').show();
+            $('.arrow-left').hide();
+        }
     });
     $('.sidebar-menu__child, .sidebar-menu__parent').on('click', function () {
         $(this).toggleClass('open').next().slideToggle('fast');

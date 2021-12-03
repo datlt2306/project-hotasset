@@ -45,6 +45,12 @@ body.toggled .sidebar {
 .sidebar-menu-sub__link {
 	@apply text-gray-500 block py-1.5;
 }
+.sidebar-menu-setting {
+	@apply py-4;
+}
+.sidebar-menu-setting img {
+	@apply mr-3;
+}
 .or:before {
 	content: "";
 	height: 1px;
